@@ -1,0 +1,109 @@
+@import '../../../assets/scss/mixins';
+@import '../../../assets/scss/variables';
+.view-activity {
+    margin: 10px;
+    .manager-view {
+
+    }
+}
+
+.history {
+    width: 100%;
+    padding: 10px;
+    .no-records {
+        text-align: center;
+        padding: 5px;
+    }
+    .history-rows {
+        max-height: 400px;
+        overflow: auto;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            &:nth-child(1) {
+                width: 160px;
+            }
+            &:nth-child(2) {
+                width: 80px;
+            }
+            &:nth-child(3) {
+                width: 80px;
+            }
+            &:nth-child(4) {
+                width: 200px;
+                span {
+                    display: inline-block;
+                    padding: 3px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    div.table-header {
+        padding: 0;
+        margin: 0;
+        background: $primary;
+        li {
+            padding: 0;
+            margin: 0;
+            font-weight: 500;
+            display: inline-block;
+            color: $white;
+            padding: 5px;
+            min-width: 100px;
+            text-align: left;
+            ul li {
+                padding: 0;
+            }
+        }
+        > li {
+            text-align: center;
+        }
+    }
+    div.all-activity {
+        min-height: 96px;
+        position: relative;
+        &:nth-child(odd) {
+            background: $blue-toggle;
+        }
+        li {
+            display: inline-block;
+            min-width: 100px;
+            vertical-align: middle;
+            div {
+                display: table;
+                ul {
+                    display: table-row;
+                    &:nth-child(odd) {
+                        //background: red;
+                    }
+                    li {        
+                        display: table-cell;     
+                        padding: 2px 5px;
+                    }
+                }
+            }
+            &.description {
+                white-space: pre-wrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        > li:first-child {
+            position: relative;
+            height: 25px;
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+            }
+        }
+        > li:last-child {
+            width: calc(100% - 240px);
+        }
+    }
+}

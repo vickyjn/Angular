@@ -1,0 +1,3 @@
+<div class="level-view">
+  <li [title]="l.title" *ngFor="let l of visibleList" [ngClass]="{'active': l.active}" (click)="updateLevel(l, visibleList)"></li>
+</div>

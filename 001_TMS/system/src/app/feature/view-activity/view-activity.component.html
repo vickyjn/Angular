@@ -1,0 +1,55 @@
+<div class="filter">
+  <tms-activity-filter (dataModel)="setData($event)" (dataChart)="setChartData($event)"></tms-activity-filter>
+</div>
+<div class="view-activity">
+  <div class="manager-view" *ngIf="activity">
+    <tms-stacked-bar-chart [data]="activity"></tms-stacked-bar-chart>
+  </div>
+</div>
+
+<div class="history">
+  <div class="table-header">
+    <li>
+      <i class="fa fa-calendar-o"></i>
+    </li>
+    <li>NTID</li>
+    <li>
+      <ul>
+        <li>Type</li>
+        <li>Status</li>
+        <li>Effort</li>
+        <li>Tags</li>
+        <li>Description</li>
+      </ul>
+    </li>
+  </div>
+  <div *ngIf="allActivity && !allActivity.length" class="no-records">
+    No Records found!
+  </div>
+  <div class="history-rows">    
+  <div class="all-activity" *ngFor="let activity of allActivity">
+    <li>
+      <span>{{activity.date}}</span>
+    </li>
+    <li>
+      <span>{{activity.createdBy}}</span>
+    </li>
+    <li>
+      <div>
+        <ul *ngFor="let effort of activity.effort" [ngStyle]="{'height.px': (96 / activity.effort.length) < 0 ? '' : (96 / activity.effort.length)}">
+          <li>{{effort.type}}</li>
+          <li *ngIf="effort.status;then inactive else active"></li>
+          <li>{{effort.hours}}</li>
+          <li class="contributors" *ngIf="effort.contributors && effort.contributors.length">
+            <span title="{{contributor.firstName}} {{contributor.lastName}}" *ngFor="let contributor of effort.contributors">{{contributor.id}}</span>
+          </li>
+          <li class="contributors" *ngIf="!(effort.contributors && effort.contributors.length)">-</li>
+          <li class="description">{{effort.desc}}</li>
+        </ul>
+      </div>
+    </li>
+  </div>
+  </div>
+</div>    
+<ng-template #inactive><li>Closed</li></ng-template>
+<ng-template #active><li>Saved</li></ng-template>

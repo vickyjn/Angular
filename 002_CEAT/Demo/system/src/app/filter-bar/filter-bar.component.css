@@ -1,0 +1,9 @@
+.static {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.form-multiselect {
+    max-width: 220px;
+    display: inline-block;
+}

@@ -1,0 +1,31 @@
+.assignment {
+    display: block;
+    padding: 15px 30px 10px;
+    > div {
+        display: inline-block;
+        width: 50%;
+        .update-btn{
+            padding-right: 17px;
+            float: right;
+        }
+        h5 {
+            font-size: 14px;
+            display: inline-block;
+        }
+        table {
+            width: 98%;
+            border-collapse: collapse;
+            border: 1px solid #4a4a4a;
+            td, th {
+                border: 1px solid #4a4a4a;
+                text-indent: 5px;
+            }
+            th {
+                font-weight: normal;
+                background: #2C85E7;
+                color: #fff;
+                padding: 4px;
+            }
+        }
+    }
+}

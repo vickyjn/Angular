@@ -1,0 +1,75 @@
+<table>
+    <thead>
+        <tr>
+            <th>#SrNo.</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Approved</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let adunit of activity; index as i;" (click)="singleSelect(adunit.date)" [ngClass]="{'highlight' : adunit.date == dataModel.date}">
+            <td>{{ i+1 }}</td>
+            <td>{{ adunit.date }}</td>
+            <td *ngIf="adunit.active== false">Closed</td>
+            <td *ngIf="adunit.active== true">Saved</td>
+            <td>{{ adunit.approved }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="grid" *ngIf="dataModel.date">
+    <h4>Activity
+    </h4>
+    <table *ngIf="dataModel.date">
+        <tr>
+            <th>S.No</th>
+            <th></th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Description</th>
+            <th>Hours</th>
+            <th>Tag</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let activity of dataModel.effort; index as i;">
+            <td align="right">{{i+1}}</td>
+            <td>
+                <i class="fa" [ngClass]="{'fa-building':activity.from, 'fa-home':!activity.from}" (click)="from(dataModel.effort.length !== i+1 || !dataModel.active, activity)"></i>
+            </td>
+            <td>
+                <select class="form-control" [(ngModel)]="activity.type" [disabled]="dataModel.effort.length !== i+1 || !dataModel.active">
+                    <option value="0" selected="selected">Select Task Type</option>
+                    <option value="Innovation">Innovation</option>
+                    <option value="Research">Research</option>
+                    <option value="Project">Project</option>
+                    <option value="Competency_Building">Competency Building</option>
+                </select>
+            </td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" [(ngModel)]="activity.status" [disabled]="dataModel.effort.length !== i+1 || !dataModel.active">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>
+                <input name="desc{{i+1}}" [disabled]="dataModel.effort.length !== i+1 || !dataModel.active" class="form-control" type="text"
+                    [(ngModel)]="activity.desc">
+
+            </td>
+            <td>
+                <input (change)="updateTotalActivity" (keydown.Tab)="addNewActivity()" [disabled]="dataModel.effort.length !== i+1 || !dataModel.active"
+                    class="form-control input-hours" type="number" [(ngModel)]="activity.hours">
+
+            </td>
+            <td>
+                <input type="text" class="form-control">
+            </td>
+            <td>
+                <div *ngIf="dataModel.effort.length > 1">
+                    <i *ngIf="dataModel.effort.length !== i+1 || !dataModel.active" (click)="remove(activity.id)" class="fa fa-remove"></i>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

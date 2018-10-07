@@ -1,0 +1,36 @@
+<div class="static clearfix">
+    <div class="form-element">
+        <label for="date">Date</label>
+        <div class='input-group'>
+            <input class="form-control" type="text" daterangepicker [(ngModel)]="date" placeholder="Select date" [options]="options"
+                (selected)="singleSelect($event)" />
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-element" style="width: 210px;">
+        <label for="date">Name</label>
+        <tms-tags (keydown.Tab)="addNewActivity()" (data)="updateContributors($event)" [enable]="true" [selected]="contributors"></tms-tags>
+    </div>
+    <div class="form-element">
+        <label for="date">Type</label>
+        <select class="form-control" [(ngModel)]="effort.type">
+            <option value="0" selected="selected" disabled>Task Type</option>
+            <option value="Innovation">Innovation</option>
+            <option value="Research">Research</option>
+            <option value="Project">Project</option>
+            <option value="Competency_Building">Competency Building</option>
+        </select>
+    </div>
+    <div class="form-element">
+        <label for="date">Status</label>
+        <label class="switch">
+            <input type="checkbox" [(ngModel)]="effort.status">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="form-element" style="padding-top: 27px;">
+        <button (click)="load()" class="btn btn-primary">Load</button>
+    </div>
+</div>

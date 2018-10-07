@@ -1,0 +1,35 @@
+<div class="mainlog">
+  <h1>ChatBot</h1>
+
+  <!-- content -->
+  <div class="sub-main-w3">
+    <form #loginForm="ngForm">
+      <h2>Login</h2>
+      <div class="form-style-agile">
+        <input placeholder="NTID" name="ntid" type="text" required="" minlength="7" id="email" [(ngModel)]="user.ntid" [ngClass]="{'is-invalid':ntid.errors && ntid.touched}"
+          #ntid="ngModel">
+        <div [hidden]="!ntid.errors?.required" class="invalid-feedback">Username required
+        </div>
+        <div [hidden]="!ntid.errors?.minlength" class="invalid-feedback">Must be atleast 7 characters
+        </div>
+      </div>
+      <div class="form-style-agile">
+        <input placeholder="Password" name="password" type="password" [(ngModel)]="user.password" [ngClass]="{'is-invalid':password.errors && password.touched}"
+          #password="ngModel" required>
+        <div [hidden]="!password.errors?.required" class="invalid-feedback">Password is required
+        </div>
+      </div>
+      <!-- <ul>
+        <li style="float: left"><input type="submit" value="Log In as User"></li>
+        <li><input type="submit" value="Log In as Consultant"></li>
+      </ul> -->
+      <input type="submit" value="Log In as User">
+      <input type="submit" class="consultant-button" value="Log In as Consultant">
+    </form>
+  </div>
+  <!-- //content -->
+
+  <!-- copyright -->
+  <div class="footer">
+  </div>
+</div>

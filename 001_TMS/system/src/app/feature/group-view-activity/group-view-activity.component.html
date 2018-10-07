@@ -1,0 +1,7 @@
+<div class="view-activity" style="display: inline-block;">
+  <div class="filter">
+  </div>
+  <div *ngIf="activity" style="display: inline-block;">
+    <tms-grouped-bar-chart [data]="activity" [pickLabel]="'Project'"></tms-grouped-bar-chart>
+  </div>
+</div>

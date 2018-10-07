@@ -1,0 +1,49 @@
+@import '../../../assets/scss/mixins';
+@import '../../../assets/scss/variables';
+.main-menu {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 45px;
+    background: $primary-bg;
+    @include bottom-shadow;
+}
+
+.min-menu {
+    width: 45px;
+}
+
+.main-menu ul li {
+    background: $menu-list;
+    color: $menu-text;
+    height: 30px;
+    overflow: hidden;
+}
+
+.main-menu ul li:hover {
+    background: $hamburger-bg;
+}
+
+.main-menu a {
+    padding: 6px 10px;
+    text-decoration: none;
+    color: $menu-text;
+    display: block;
+}
+
+.main-menu a i {
+    width: 25px;
+    text-align: center;
+    height: 25px;
+    font-size: 16px;
+}
+
+.main-menu a label {
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+}

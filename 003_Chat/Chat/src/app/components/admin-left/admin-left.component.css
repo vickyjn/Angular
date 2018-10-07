@@ -1,0 +1,47 @@
+.main-ul{
+    overflow-y: auto;
+    height: 481px;
+}
+.sidebar-menu ul {    
+    height: calc(100% - 80px);
+    overflow-y: auto;
+}
+.sidebar-menu ul, .chat-list li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ababab;
+}
+.sidebar-menu li:first-child {
+    border-top: 1px solid #ababab;
+}
+.sidebar-menu li:hover{
+    padding: 10px;
+    border-bottom: 1px solid #ababab;
+    background: #bfbfbf;
+    cursor: pointer; 
+}
+.user-id {
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-size: 16px;
+    color: #008ECF;
+    text-transform: uppercase;
+}
+.ticket-id {
+    float: right;
+    width: 50%;    
+    text-align: right;
+    font-size: 16px;
+    color: #000;
+}
+.time-stamp {
+    float: right;
+    text-align: right;
+    clear: both;
+    font-size: 12px;
+}

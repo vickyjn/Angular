@@ -1,0 +1,5 @@
+<div class="main-menu" [ngClass]="{'min-menu':view}">
+    <ul>
+        <li *ngFor="let m of menu"><a href="" [routerLink]="m.route"><i [ngClass]="m.icon"></i><label *ngIf="!view">{{m.name}}</label></a></li>
+    </ul>
+</div>

@@ -1,0 +1,41 @@
+<div class="mainlog">
+  <!-- <h1>ChatBot</h1> -->
+
+  <!-- content -->
+  <div class="sub-main-w3">
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+      <h2>Register</h2>
+      <div class="form-style-agile">
+        <input placeholder="NTID" name="ntid" type="text" required minlength="7" id="email" [(ngModel)]="user.ntid" [ngClass]="{'is-invalid':ntid.errors && ntid.touched}"
+          #ntid="ngModel">
+        <div [hidden]="!ntid.errors?.required" class="invalid-feedback">Username required
+        </div>
+        <div [hidden]="!ntid.errors?.minlength" class="invalid-feedback">Must be atleast 7 characters
+        </div>
+      </div>
+      <div class="form-style-agile">
+        <input placeholder="First Name" name="firstName" type="text" required [(ngModel)]="user.firstName" [ngClass]="{'is-invalid':fname.errors && fname.touched}"
+          #fname="ngModel">
+        <div [hidden]="!fname.errors?.required" class="invalid-feedback">First Name required
+        </div>
+      </div>
+      <div class="form-style-agile">
+        <input placeholder="Last Name" name="lastName" type="text" required [(ngModel)]="user.lastName" [ngClass]="{'is-invalid':lname.errors && lname.touched}"
+          #lname="ngModel">
+        <div [hidden]="!lname.errors?.required" class="invalid-feedback">Last Name required
+        </div>
+      </div>
+      <div class="form-style-agile">
+        <input placeholder="Password" name="password" type="password" [(ngModel)]="user.password" [ngClass]="{'is-invalid':password.errors && password.touched}"
+          #password="ngModel" required>
+        <div [hidden]="!password.errors?.required" class="invalid-feedback">Password is required
+        </div>
+      </div>
+      <!-- <button class="btn btn-outline-info btn-lg btn-block mb-4" id="signInBtn">Register</button> -->
+      <input type="submit" value="Register">
+    </form>
+  </div>
+  <!-- //content -->
+
+  <!-- copyright -->
+</div>

@@ -1,0 +1,15 @@
+<div (window:resize)="onResize()">
+    <ul class="segmented">
+        <li (click)="loadChart('SPEED')" [ngClass]="{'selected': y === 'SPEED'}">SPEED</li>
+        <li (click)="loadChart('RPM')" [ngClass]="{'selected': y === 'RPM'}">RPM</li>
+    </ul>
+</div>
+<div class="multiline" #divToMeasure>
+    <div class="loading" *ngIf="loading">Loading...</div>
+    <div class="no-data" *ngIf="noData">No Data!</div>
+    <div class="legends" *ngIf="noLegends">
+        <ul>
+            <li (click)="toggleLine(l, legends)" *ngFor="let l of legends" [ngClass]="{'active': l.active}" [ngStyle]="{'color': l.color}">{{l.name}}</li>
+        </ul>
+    </div>
+</div>

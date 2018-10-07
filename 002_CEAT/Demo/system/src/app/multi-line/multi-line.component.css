@@ -1,0 +1,105 @@
+path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 2;
+    shape-rendering: crispEdges;
+    clip-path: url(#clip);
+}
+
+.zoom {
+    fill: none;
+}
+
+.legend {
+    font-size: 16px;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+.multiline {
+    position: relative;
+}
+
+.no-data,
+.loading {
+    transform: translate(50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.segmented {
+    margin: 10px auto;
+    width: 200px;
+}
+
+.segmented ul {
+    display: block;
+    padding: 0;
+}
+
+.segmented li {
+    padding: 5px;
+    display: inline-block;
+    width: 100px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.segmented li.selected {
+    background: #2f84ce;
+    border: 1px solid #ddd;
+    color: #fff;
+    cursor: default;
+}
+
+.segmented li:first-of-type {
+    border-radius: 5px 0 0 5px;
+}
+
+.segmented li:last-of-type {
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+}
+
+.legends {
+    width: 100px;
+    position: absolute;
+    right: 15px;
+}
+
+.legends ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.legends ul li {
+    padding: 3px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.legends ul li.active {
+    background: #2f84ce;
+    color: #fff !important;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}

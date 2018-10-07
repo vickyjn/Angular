@@ -1,0 +1,40 @@
+<tms-skill-carousel [list]="skills" (emitSkill)="getSkill($event)"></tms-skill-carousel>
+<div class="assignment">
+    <div>
+        <h5>To be Assigned</h5>
+        <div class="update-btn">
+            <button class="btn btn-xs btn-primary" (click)="save()">Update</button>
+        </div>
+        <table>
+            <tr>
+                <th width="40px">S.No</th>
+                <th>Name</th>
+                <th width="90px">Skill Level</th>
+            </tr>
+            <tr *ngFor="let employee of employees; let i = index">
+                <td>{{i+1}}</td>
+                <td>{{employee.firstName}} {{employee.lastName}}</td>
+                <td>
+                    <tms-level (level)="employee.level" (emitData)="updateData($event, employee)"></tms-level>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h5>Assigned</h5>
+        <table>
+            <tr>
+                <th width="40px">S.No</th>
+                <th>Name</th>
+                <th width="90px">Skill Level</th>
+            </tr>
+            <tr *ngFor="let employee of employees; let i = index">
+                <td>{{i+1}}</td>
+                <td>{{employee.firstName}} {{employee.lastName}}</td>
+                <td>
+                    <tms-level></tms-level>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,176 @@
+.chat-view{
+    height: 538px;
+    overflow-y: auto;
+}
+
+.chat-view ul {    
+    height: calc(100% - 80px);
+}
+.chat-view ul, .chat-list li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+ul.conversation {
+    display: block;
+}
+ul.conversation li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 70%;
+}
+ul.conversation li.pull-right {
+    text-align: right;
+}
+.bot-wrapper{
+    margin: 10px 10px;
+    padding: 5px 5px;
+    font-size: 16px;
+    border: 2px solid #376996;
+    background: #73b2dc;
+    line-height: 28px;
+    padding: 10px 10px !important;
+    margin: 10px 10px !important;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    position: relative;
+}
+.user-wrapper{
+    margin: 10px 10px;
+    padding: 5px 5px;
+    font-size: 16px;
+    border: 2px solid #376996;
+    background: #fff;
+    line-height: 28px;
+    padding: 10px 10px !important;
+    margin: 10px 10px !important;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    position: relative;
+}
+.bot-wrapper span{
+    font-size: 12px;
+    position: absolute;
+    right: 5px;
+    bottom: -8px;
+}
+.user-wrapper span{
+    font-size: 12px;
+    position: absolute;
+    left: 5px;
+    bottom: -8px;
+}
+
+.bottom-layout{
+    /* border: 1px solid red; */
+    position: fixed;
+    height: 100px;
+    width: 75.5%;
+}
+
+/* Recent Tick */
+#world-map{
+    overflow-y: auto; 
+}
+ul.recent-tick, .recent-tick li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+ul.recent-tick{
+    display: block;
+}
+ul.recent-tick li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    /* width: 70%; */
+    border-bottom: 1px solid #ababab;
+}
+.recent-tick li:first-child{
+    border-top: 1px solid #ababab;
+}
+.user-id {
+    /* border: 1px solid #000; */
+    float: left;
+    width: 33%;
+    text-align: left;
+    font-size: 16px;
+    color: #008ECF;
+    text-transform: uppercase;
+}
+.ticket-id {
+    /* border: 1px solid #000; */
+    /* float: right; */
+    display: inline-block;
+    margin:0 auto;
+    width: 33%;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+.wording {
+    /* border: 1px solid #000; */
+    width: 33%;
+    float: right;
+    text-align: right;
+    font-size: 16px;
+}
+.recent-tick li:hover{
+    /* padding: 10px; */
+    /* border-bottom: 1px solid #ababab; */
+    background: #bfbfbf;
+    cursor: pointer; 
+}
+
+
+/* All Ticks */
+#line-chart{
+    overflow-y: auto; 
+}
+ul.all-tick, .all-tick li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+ul.all-tick{
+    display: block;
+}
+ul.all-tick li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    border-bottom: 1px solid #ababab;
+}
+.all-tick li:first-child{
+    border-top: 1px solid #ababab;
+}
+.all-user-id {
+    /* border: 1px solid #000; */
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-size: 16px;
+    color: #008ECF;
+    text-transform: uppercase;
+}
+.all-ticket-id {
+    /* border: 1px solid #000; */
+    /* float: right; */
+    display: inline-block;
+    margin:0 auto;
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+.all-tick li:hover{
+    /* padding: 10px; */
+    /* border-bottom: 1px solid #ababab; */
+    background: #bfbfbf;
+    cursor: pointer;
+}

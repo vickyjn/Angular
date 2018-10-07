@@ -1,0 +1,9 @@
+<app-code-block [(value)]="source"></app-code-block>
+<div class="controls">
+  <select [(ngModel)]="language">
+    <option value="" selected>select</option>
+    <option [value]="language.key" *ngFor="let language of languages">{{language.name}}</option>
+  </select>
+  <button [disabled]="!source || !language" (click)="compileCode()">Compile</button>
+</div>
+<div class="output"></div>

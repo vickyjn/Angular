@@ -1,0 +1,694 @@
+[{
+        "date": 1010001,
+        "delay": 14,
+        "distance": 405,
+        "origin": "MCI",
+        "destination": "MDW"
+    },
+    {
+        "date": 1010530,
+        "delay": -11,
+        "distance": 370,
+        "origin": "LAX",
+        "destination": "PHX"
+    },
+    {
+        "date": 1010540,
+        "delay": 5,
+        "distance": 389,
+        "origin": "ONT",
+        "destination": "SMF"
+    },
+    {
+        "date": 3311525,
+        "delay": 13,
+        "distance": 296,
+        "origin": "DAL",
+        "destination": "LIT"
+    },
+    {
+        "date": 3311526,
+        "delay": 0,
+        "distance": 258,
+        "origin": "SAN",
+        "destination": "LAS"
+    },
+    {
+        "date": 3311526,
+        "delay": 5,
+        "distance": 373,
+        "origin": "SMF",
+        "destination": "LAX"
+    },
+    {
+        "date": 3311529,
+        "delay": 0,
+        "distance": 1262,
+        "origin": "STL",
+        "destination": "PHX"
+    },
+    {
+        "date": 3311530,
+        "delay": -17,
+        "distance": 1156,
+        "origin": "STL",
+        "destination": "SLC"
+    },
+    {
+        "date": 3311530,
+        "delay": -2,
+        "distance": 1797,
+        "origin": "LAX",
+        "destination": "BNA"
+    },
+    {
+        "date": 3311530,
+        "delay": -3,
+        "distance": 239,
+        "origin": "HOU",
+        "destination": "DAL"
+    },
+    {
+        "date": 3311530,
+        "delay": -5,
+        "distance": 220,
+        "origin": "ISP",
+        "destination": "BWI"
+    },
+    {
+        "date": 3311530,
+        "delay": 41,
+        "distance": 417,
+        "origin": "SAN",
+        "destination": "SJC"
+    },
+    {
+        "date": 3311533,
+        "delay": -1,
+        "distance": 369,
+        "origin": "BUR",
+        "destination": "PHX"
+    },
+    {
+        "date": 3311533,
+        "delay": -2,
+        "distance": 1912,
+        "origin": "PHX",
+        "destination": "BUF"
+    },
+    {
+        "date": 3311533,
+        "delay": -5,
+        "distance": 337,
+        "origin": "LAX",
+        "destination": "OAK"
+    },
+    {
+        "date": 3311535,
+        "delay": -15,
+        "distance": 237,
+        "origin": "STL",
+        "destination": "MCI"
+    },
+    {
+        "date": 3311535,
+        "delay": -3,
+        "distance": 395,
+        "origin": "MDW",
+        "destination": "BNA"
+    },
+    {
+        "date": 3311535,
+        "delay": -4,
+        "distance": 417,
+        "origin": "SJC",
+        "destination": "SAN"
+    },
+    {
+        "date": 3311535,
+        "delay": -5,
+        "distance": 1009,
+        "origin": "PDX",
+        "destination": "PHX"
+    },
+    {
+        "date": 3311535,
+        "delay": -5,
+        "distance": 258,
+        "origin": "LAS",
+        "destination": "SAN"
+    },
+    {
+        "date": 3311535,
+        "delay": -6,
+        "distance": 237,
+        "origin": "TUL",
+        "destination": "DAL"
+    },
+    {
+        "date": 3311535,
+        "delay": -7,
+        "distance": 647,
+        "origin": "SMF",
+        "destination": "PHX"
+    },
+    {
+        "date": 3311535,
+        "delay": -9,
+        "distance": 611,
+        "origin": "BWI",
+        "destination": "MDW"
+    },
+    {
+        "date": 3311535,
+        "delay": 1,
+        "distance": 1363,
+        "origin": "LAX",
+        "destination": "MCI"
+    },
+    {
+        "date": 3311535,
+        "delay": 2,
+        "distance": 314,
+        "origin": "BWI",
+        "destination": "CLE"
+    },
+    {
+        "date": 3311535,
+        "delay": 7,
+        "distance": 197,
+        "origin": "TPA",
+        "destination": "FLL"
+    },
+    {
+        "date": 3311535,
+        "delay": 7,
+        "distance": 491,
+        "origin": "BNA",
+        "destination": "MCI"
+    },
+    {
+        "date": 3311535,
+        "delay": 7,
+        "distance": 796,
+        "origin": "MAF",
+        "destination": "LAS"
+    },
+    {
+        "date": 3311536,
+        "delay": 40,
+        "distance": 370,
+        "origin": "PHX",
+        "destination": "LAX"
+    },
+    {
+        "date": 3311537,
+        "delay": 26,
+        "distance": 188,
+        "origin": "RNO",
+        "destination": "SJC"
+    },
+    {
+        "date": 3311537,
+        "delay": 6,
+        "distance": 321,
+        "origin": "BHM",
+        "destination": "MSY"
+    },
+    {
+        "date": 3311540,
+        "delay": -10,
+        "distance": 229,
+        "origin": "MDW",
+        "destination": "DTW"
+    },
+    {
+        "date": 3311540,
+        "delay": -10,
+        "distance": 419,
+        "origin": "HOU",
+        "destination": "OKC"
+    },
+    {
+        "date": 3311540,
+        "delay": -12,
+        "distance": 479,
+        "origin": "SMF",
+        "destination": "PDX"
+    },
+    {
+        "date": 3311540,
+        "delay": -12,
+        "distance": 520,
+        "origin": "BOI",
+        "destination": "LAS"
+    },
+    {
+        "date": 3311540,
+        "delay": -5,
+        "distance": 347,
+        "origin": "PHX",
+        "destination": "ELP"
+    },
+    {
+        "date": 3311540,
+        "delay": -6,
+        "distance": 377,
+        "origin": "MHT",
+        "destination": "BWI"
+    },
+    {
+        "date": 3311540,
+        "delay": -8,
+        "distance": 283,
+        "origin": "BDL",
+        "destination": "BWI"
+    },
+    {
+        "date": 3311540,
+        "delay": 0,
+        "distance": 1099,
+        "origin": "OMA",
+        "destination": "LAS"
+    },
+    {
+        "date": 3311540,
+        "delay": 11,
+        "distance": 370,
+        "origin": "LAX",
+        "destination": "PHX"
+    },
+    {
+        "date": 3311540,
+        "delay": 21,
+        "distance": 236,
+        "origin": "LAX",
+        "destination": "LAS"
+    },
+    {
+        "date": 3311541,
+        "delay": 10,
+        "distance": 564,
+        "origin": "SEA",
+        "destination": "RNO"
+    },
+    {
+        "date": 3311545,
+        "delay": -3,
+        "distance": 480,
+        "origin": "SMF",
+        "destination": "SAN"
+    },
+    {
+        "date": 3311545,
+        "delay": -5,
+        "distance": 217,
+        "origin": "DAL",
+        "destination": "IAH"
+    },
+    {
+        "date": 3311545,
+        "delay": -6,
+        "distance": 588,
+        "origin": "BNA",
+        "destination": "BWI"
+    },
+    {
+        "date": 3311545,
+        "delay": -7,
+        "distance": 148,
+        "origin": "AUS",
+        "destination": "HOU"
+    },
+    {
+        "date": 3311545,
+        "delay": -9,
+        "distance": 495,
+        "origin": "SDF",
+        "destination": "BWI"
+    },
+    {
+        "date": 3311545,
+        "delay": 0,
+        "distance": 361,
+        "origin": "ONT",
+        "destination": "OAK"
+    },
+    {
+        "date": 3311545,
+        "delay": 0,
+        "distance": 580,
+        "origin": "DAL",
+        "destination": "ABQ"
+    },
+    {
+        "date": 3311547,
+        "delay": 16,
+        "distance": 405,
+        "origin": "MCI",
+        "destination": "MDW"
+    },
+    {
+        "date": 3311550,
+        "delay": -1,
+        "distance": 407,
+        "origin": "OAK",
+        "destination": "LAS"
+    },
+    {
+        "date": 3311550,
+        "delay": -10,
+        "distance": 2237,
+        "origin": "LAS",
+        "destination": "ALB"
+    },
+    {
+        "date": 3311550,
+        "delay": -14,
+        "distance": 448,
+        "origin": "BNA",
+        "destination": "CLE"
+    },
+    {
+        "date": 3311550,
+        "delay": -23,
+        "distance": 1618,
+        "origin": "BHM",
+        "destination": "LAS"
+    },
+    {
+        "date": 3311550,
+        "delay": -4,
+        "distance": 543,
+        "origin": "PDX",
+        "destination": "OAK"
+    },
+    {
+        "date": 3311550,
+        "delay": -5,
+        "distance": 319,
+        "origin": "DAL",
+        "destination": "MAF"
+    },
+    {
+        "date": 3311550,
+        "delay": -5,
+        "distance": 338,
+        "origin": "CMH",
+        "destination": "BNA"
+    },
+    {
+        "date": 3311550,
+        "delay": -6,
+        "distance": 251,
+        "origin": "STL",
+        "destination": "MDW"
+    },
+    {
+        "date": 3311550,
+        "delay": -7,
+        "distance": 321,
+        "origin": "TUS",
+        "destination": "ABQ"
+    },
+    {
+        "date": 3311550,
+        "delay": -8,
+        "distance": 872,
+        "origin": "PHX",
+        "destination": "AUS"
+    },
+    {
+        "date": 3311550,
+        "delay": -9,
+        "distance": 621,
+        "origin": "SJC",
+        "destination": "PHX"
+    },
+    {
+        "date": 3311550,
+        "delay": 0,
+        "distance": 1546,
+        "origin": "HOU",
+        "destination": "RNO"
+    },
+    {
+        "date": 3311550,
+        "delay": 0,
+        "distance": 471,
+        "origin": "BNA",
+        "destination": "MSY"
+    },
+    {
+        "date": 3311550,
+        "delay": 5,
+        "distance": 236,
+        "origin": "LAX",
+        "destination": "LAS"
+    },
+    {
+        "date": 3311550,
+        "delay": 7,
+        "distance": 223,
+        "origin": "BUR",
+        "destination": "LAS"
+    },
+    {
+        "date": 3311553,
+        "delay": 17,
+        "distance": 162,
+        "origin": "IND",
+        "destination": "MDW"
+    },
+    {
+        "date": 3311555,
+        "delay": -3,
+        "distance": 487,
+        "origin": "CLE",
+        "destination": "STL"
+    },
+    {
+        "date": 3311555,
+        "delay": -5,
+        "distance": 440,
+        "origin": "STL",
+        "destination": "DTW"
+    },
+    {
+        "date": 3311555,
+        "delay": 0,
+        "distance": 303,
+        "origin": "MSY",
+        "destination": "HOU"
+    },
+    {
+        "date": 3311555,
+        "delay": 22,
+        "distance": 318,
+        "origin": "FLL",
+        "destination": "JAX"
+    },
+    {
+        "date": 3311555,
+        "delay": 5,
+        "distance": 328,
+        "origin": "PHX",
+        "destination": "ABQ"
+    },
+    {
+        "date": 3311555,
+        "delay": 8,
+        "distance": 590,
+        "origin": "LAX",
+        "destination": "SLC"
+    },
+    {
+        "date": 3311556,
+        "delay": -2,
+        "distance": 162,
+        "origin": "MDW",
+        "destination": "IND"
+    },
+    {
+        "date": 3311557,
+        "delay": 9,
+        "distance": 507,
+        "origin": "PHX",
+        "destination": "SLC"
+    },
+    {
+        "date": 3311558,
+        "delay": 7,
+        "distance": 223,
+        "origin": "LAS",
+        "destination": "BUR"
+    },
+    {
+        "date": 3311600,
+        "delay": -12,
+        "distance": 833,
+        "origin": "OKC",
+        "destination": "PHX"
+    },
+    {
+        "date": 3311600,
+        "delay": -16,
+        "distance": 1262,
+        "origin": "STL",
+        "destination": "PHX"
+    },
+    {
+        "date": 3311600,
+        "delay": -2,
+        "distance": 276,
+        "origin": "HRL",
+        "destination": "HOU"
+    },
+    {
+        "date": 3311600,
+        "delay": -2,
+        "distance": 358,
+        "origin": "BUR",
+        "destination": "SMF"
+    },
+    {
+        "date": 3311600,
+        "delay": -22,
+        "distance": 646,
+        "origin": "PHX",
+        "destination": "OAK"
+    },
+    {
+        "date": 3311600,
+        "delay": -6,
+        "distance": 248,
+        "origin": "SAT",
+        "destination": "DAL"
+    },
+    {
+        "date": 3311600,
+        "delay": -8,
+        "distance": 239,
+        "origin": "DAL",
+        "destination": "HOU"
+    },
+    {
+        "date": 3311600,
+        "delay": -8,
+        "distance": 328,
+        "origin": "BWI",
+        "destination": "PVD"
+    },
+    {
+        "date": 3311600,
+        "delay": 0,
+        "distance": 337,
+        "origin": "OAK",
+        "destination": "LAX"
+    },
+    {
+        "date": 3311600,
+        "delay": 3,
+        "distance": 590,
+        "origin": "SLC",
+        "destination": "LAX"
+    },
+    {
+        "date": 3311600,
+        "delay": 6,
+        "distance": 371,
+        "origin": "OAK",
+        "destination": "SNA"
+    },
+    {
+        "date": 3311603,
+        "delay": 68,
+        "distance": 178,
+        "origin": "MCO",
+        "destination": "FLL"
+    },
+    {
+        "date": 3311604,
+        "delay": -8,
+        "distance": 405,
+        "origin": "MCI",
+        "destination": "MDW"
+    },
+    {
+        "date": 3311604,
+        "delay": 12,
+        "distance": 236,
+        "origin": "LAS",
+        "destination": "LAX"
+    },
+    {
+        "date": 3311605,
+        "delay": -12,
+        "distance": 580,
+        "origin": "ABQ",
+        "destination": "DAL"
+    },
+    {
+        "date": 3311605,
+        "delay": -13,
+        "distance": 256,
+        "origin": "PHX",
+        "destination": "LAS"
+    },
+    {
+        "date": 3311605,
+        "delay": -20,
+        "distance": 351,
+        "origin": "TUL",
+        "destination": "STL"
+    },
+    {
+        "date": 3311605,
+        "delay": -5,
+        "distance": 337,
+        "origin": "LAX",
+        "destination": "OAK"
+    },
+    {
+        "date": 3311605,
+        "delay": -7,
+        "distance": 588,
+        "origin": "BWI",
+        "destination": "BNA"
+    },
+    {
+        "date": 3311605,
+        "delay": 0,
+        "distance": 663,
+        "origin": "JAX",
+        "destination": "BWI"
+    },
+    {
+        "date": 3311605,
+        "delay": 0,
+        "distance": 972,
+        "origin": "ISP",
+        "destination": "MCO"
+    },
+    {
+        "date": 3311605,
+        "delay": 2,
+        "distance": 318,
+        "origin": "JAX",
+        "destination": "FLL"
+    },
+    {
+        "date": 3311605,
+        "delay": 3,
+        "distance": 287,
+        "origin": "BOI",
+        "destination": "GEG"
+    },
+    {
+        "date": 3311605,
+        "delay": 9,
+        "distance": 271,
+        "origin": "MDW",
+        "destination": "SDF"
+    }
+]

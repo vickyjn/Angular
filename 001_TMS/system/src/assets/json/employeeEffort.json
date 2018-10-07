@@ -1,0 +1,24 @@
+[{
+    "id": 1,
+    "date": 1531612800000,
+    "task": "Mongo setUp",
+    "taskId": 2,
+    "taskDescription": "",
+    "taskType": "development",
+    "taskTypeId": 5,
+    "status": "in-progress",
+    "statusId": 2,
+    "activity": [{
+            "activityNo": 1,
+            "effort": 4.5
+        },
+        {
+            "activityNo": 2,
+            "effort": 4.5
+        },
+        {
+            "activityNo": 3,
+            "effort": 4.5
+        }
+    ]
+}]

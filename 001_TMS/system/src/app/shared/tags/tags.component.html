@@ -1,0 +1,14 @@
+<div class="tag" [ngClass]="{'disabled': !enable}">
+  <div class="list-input form-control">
+    <ul class="added">
+      <li *ngFor="let contributor of selected"><i>#</i>{{contributor.id}} <i *ngIf="enable" class="fa fa-close" (click)="removeTag(contributor)"></i></li>
+    </ul>
+    <div *ngIf="enable && (selected && selected.length < 3)" class="query-box">
+        <input *ngIf="(selected && selected.length < 3)" type="text" [(ngModel)]="searchText" (input)="makeSearch($event.target.value)">
+    </div>
+  </div>
+  <ul class="free-flow" *ngIf="searchText && searchText.length >= 3">
+    <li *ngIf="contributors && !contributors.length">{{pauseText}}</li>
+    <li title="{{contributor.id}}: {{contributor.firstName}} {{contributor.lastName}}" *ngFor="let contributor of contributors" (click)="selectContributor(contributor)">{{contributor.firstName}} {{contributor.lastName}}</li>
+  </ul>
+</div>

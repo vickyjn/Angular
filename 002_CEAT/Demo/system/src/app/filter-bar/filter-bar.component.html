@@ -1,0 +1,14 @@
+<div class="static clearfix">
+    <div class="form-element">
+        <label for="date">Date & Time :</label>
+        <div class='input-group'>
+            <input class="form-control" type="text" daterangepicker ngModel={{start}}-{{end}} placeholder="Select date" [options]="options" (selected)="singleSelect($event)" />
+            <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-element" style="padding-top: 30px;">
+        <button class="btn" (click)="resetData()"> Load </button>
+    </div>
+</div>

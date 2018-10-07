@@ -1,0 +1,7 @@
+<tms-indicator *ngIf="indicator"></tms-indicator>
+<side-nav [view]="minimizemenu"></side-nav>
+<m-header (togglestate)="navtoggle($event)"></m-header>
+<div class="main-container" [ngClass]="{'max-container':minimizemenu}">
+    <tms-breadcrums></tms-breadcrums>
+    <router-outlet></router-outlet>
+</div>

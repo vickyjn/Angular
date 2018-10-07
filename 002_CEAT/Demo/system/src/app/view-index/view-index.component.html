@@ -1,0 +1,5 @@
+<div [ngStyle]="{'width': width, 'height': height}">
+    <app-filter-bar (postData)="setData($event)"></app-filter-bar>
+    <app-multi-line [viewData]="data" [x]="'TIMESTAMP'" [y]="'SPEED'" [id]="'TYRE_ID'"></app-multi-line>
+    <app-bar-line [viewData]="filteredData"></app-bar-line>
+</div>

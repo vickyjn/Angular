@@ -1,0 +1,26 @@
+.axis--x path {
+    display: none;
+  }
+  
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+  .form-multiselect{
+    width: 300px;
+    float: left;
+    padding: 5px 10px;
+ }
+ .svg-c {
+   position: relative;
+   height: 500px;
+ }
+ .svg-c div {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: rgba(255,255,255, 0.7);
+   line-height: 100%;
+   text-align: center;
+ }

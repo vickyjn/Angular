@@ -1,0 +1,11 @@
+.rating {
+    display: inline-block;
+}
+.rating ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.rating ul li {
+    display: inline-block;
+}

@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5b1e3de7ad9db30e6849b999"},"name":"performance","icon":"fa fa-star","enabled":false}
+{"_id":{"$oid":"5b1e3dfbad9db30e6849b99a"},"name":"profile","icon":"fa fa-user","route":"/profile","enabled":false}
+{"_id":{"$oid":"5b4ec90fb87b131854b7cbc8"},"name":"activity","icon":"fa fa-calendar","route":"/activity","enabled":true}
+{"_id":{"$oid":"5b5d6453bf14e20c2822e216"},"name":"view activity","icon":"fa fa-calculator","route":"/view-activity","enabled":true}

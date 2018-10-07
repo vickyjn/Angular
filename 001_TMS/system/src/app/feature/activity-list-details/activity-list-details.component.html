@@ -1,0 +1,9 @@
+<div class="container" align="center" *ngIf="data && data._id">
+  <h4>Activity Details</h4>
+  <hr>
+  <div *ngFor="let adunit of data.activities;let i = index ">
+    <label>Activity {{i+1}} : </label>{{adunit.activityname}}
+    <br />
+    <label>Hourspent : </label>{{adunit.hourspend}}
+  </div>
+</div>

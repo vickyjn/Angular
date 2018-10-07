@@ -1,0 +1,103 @@
+<div class="static clearfix">
+    <div class="form-element">
+        <label for="date">Date</label>
+        <div class='input-group'>
+            <input class="form-control" type="text" daterangepicker [(ngModel)]="dataModel.date" placeholder="Select date" [options]="options"
+                (selected)="singleSelect($event)" />
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-element">
+        <tms-bar-chart [data]="dataModel.effort" [hover]="chartHover" [fill]="chartFill"></tms-bar-chart>
+    </div>
+    <div class="form-element total-activity" *ngIf="totalActivityEffort">
+        <span>{{totalActivityEffort}}
+            <sup> Hr
+                <i *ngIf="totalActivityEffort > 1">s</i>
+            </sup>
+        </span>
+    </div>
+</div>
+
+<div class="grid" *ngIf="dataModel.date">
+    <h4>Activity
+
+        <button *ngIf="dataModel.active" (click)="addNewActivity()" class="btn btn-xs btn-outline-primary">Add</button>
+        <div *ngFor="let activity of dataModel.effort; index as i" style="display: inline-block;">
+            <span *ngIf="!dataModel.effort[i].hours || !dataModel.effort[i].type || !dataModel.effort[i].desc" style="font-size: 12px;margin-left: 15px;color: #ff0000;">{{msg}}</span>
+
+        </div>
+        <div class="user-actions">
+            <h5 *ngIf="!dataModel.active">Activity Saved and Closed!</h5>
+            <div *ngIf="dataModel.active">
+                <button [disabled]="!totalActivityEffort" (click)="saveActivity(0)" class="btn btn-xs btn-primary">Save</button>
+                <button [disabled]="!totalActivityEffort" *ngIf="!dataModel.approved" (click)="saveActivity(1)" class="btn btn-xs btn-primary">Save and Close</button>
+            </div>
+        </div>
+
+    </h4>
+
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th></th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Description</th>
+            <th>Hours</th>
+            <th>Tag</th>
+            <th>Skills</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let activity of dataModel.effort; index as i;">
+            <td align="right">{{i+1}}</td>
+            <td>
+                <i class="fa" [ngClass]="{'fa-building':activity.from, 'fa-home':!activity.from}" (click)="from(dataModel.effort.length !== i+1 || !dataModel.active, activity)"></i>
+            </td>
+            <td>
+                <select class="form-control" [(ngModel)]="activity.type" [disabled]="dataModel.effort.length !== i+1 || !dataModel.active">
+                    <option value="0" selected="selected" disabled>Select Task Type</option>
+                    <option value="Innovation">Innovation</option>
+                    <option value="Research">Research</option>
+                    <option value="Project">Project</option>
+                    <option value="Competency_Building">Competency Building</option>
+                </select>
+            </td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" [(ngModel)]="activity.status" [disabled]="dataModel.effort.length !== i+1 || !dataModel.active">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+
+            <td>
+                <input name="desc{{i+1}}" [disabled]="dataModel.effort.length !== i+1 || !dataModel.active" class="form-control" type="text"
+                    [(ngModel)]="activity.desc" maxlength="100">
+
+            </td>
+            <td>
+                <input (change)="updateTotalActivity(activity)" min="0" [disabled]="dataModel.effort.length !== i+1 || !dataModel.active"
+                    class="form-control input-hours" type="number" [(ngModel)]="activity.hours">
+
+            </td>
+            <td>
+                <tms-tags (keydown.Tab)="addNewActivity()" (data)="updateContributors($event, activity)" [enable]="!(dataModel.effort.length !== i+1 || !dataModel.active)"
+                    [selected]="activity.contributors"></tms-tags>
+            </td>
+            <td>
+                <select class="form-control" [(ngModel)]="activity.skills" [disabled]="dataModel.effort.length !== i+1 || !dataModel.active">
+                    <option *ngFor="let data of skills;" [value]=data.skill>{{data.skill}}</option>
+                </select>
+            </td>
+            <td>
+                <div *ngIf="dataModel.effort.length > 1 && dataModel.active">
+                    <i *ngIf="dataModel.effort.length !== i+1 || !dataModel.active" (click)="remove(activity.id)" class="fa fa-remove"></i>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+</div>

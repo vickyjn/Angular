@@ -1,0 +1,52 @@
+<div class="static clearfix">
+    <div class="form-element">
+        <img alt="" class="img-responsive cursor-pointer" *ngIf="dataModel.picture" style="height: 50px;"
+        src="{{dataModel.picture}}">
+    </div>
+    <div class="form-element">
+        <label for=""><b>{{dataModel.firstName}}</b> | {{ntid}}</label>
+        <label for="">{{dataModel.designation}}</label>
+    </div>
+    <button class="btn pull-right" style="margin-right: 20px;" (click)="saveProfile()">Save</button>
+</div>
+
+<div class="row">
+    <div class="col-md-6" style="padding-left: 30px;">
+        <div class="grid">
+            <h4>Skills
+                <button (click)="addNewSkill()" class="btn btn-xs btn-outline-primary">Add</button>
+            </h4>
+            <table>
+                <tr>
+                    <th>S.No</th>
+                    <th>Skill</th>
+                    <th>Rating</th>
+                    <th></th>
+                </tr>
+                <tr *ngFor="let skill of dataModel.skills; index as i;">
+                    <td align="right">{{i+1}}</td>
+                    <td>
+                        <input class="form-control" type="text" [(ngModel)]="skill.skill">
+                    </td>
+                    <td>
+                        <p *ngIf="!skill.rate"><tms-rating [count]="5" (rated)="skill.rate" (emitNewRating)="updateRate($event, skill)"></tms-rating></p>
+                        <p *ngIf="skill.rate"><tms-rating [count]="5" [rated]="skill.rate" (emitNewRating)="updateRate($event, skill)"></tms-rating></p>
+                    </td>
+                    <td>
+                        <div >
+                            <i  (click)="remove(skill.skillId)" class="fa fa-remove"></i>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-6" style="padding-right: 30px;">
+        <h4>Experience
+        </h4>
+        <textarea name="description" id="" cols="30" rows="10" style="width: 100%;" [(ngModel)]="dataModel.experience"></textarea>
+        <h4>Tools
+        </h4>
+        <input class="form-control" name="tools" type="text" [(ngModel)]="dataModel.tools">
+    </div>
+  </div>

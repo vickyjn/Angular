@@ -1,0 +1,40 @@
+.grid {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.grid table {
+    border-collapse: collapse;
+}
+
+.grid table th:nth-child(3) {
+    width: 90px;
+}
+
+.grid table th:last-child {
+    width: 80px;
+}
+
+.grid table th,
+.grid table td {
+    padding: 15px 15px 0px 7px;
+}
+
+.grid table td i {
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.input-hours {
+    width: 70px;
+}
+
+.user-actions {
+    float: right;
+}
+
+.user-actions button {
+    margin-left: 5px;
+}

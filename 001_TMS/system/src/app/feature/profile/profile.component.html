@@ -1,0 +1,23 @@
+<div class="row" id="myBtnContainer" style="margin-left: 150px;">
+    <button class="btn1" type="button" (click)="filterby='all'"> Show all</button>
+    <ul class="menu" *ngFor="let list of uniqueskill.lists">
+        <li><button class="btn1" type="button" (click)="click(list)"> {{list}}</button></li>
+    </ul>
+</div>
+<div class="card-group">
+    <div *ngFor="let employee of employeedetails" style="padding-left: 150px;">
+      <div class="card column {{filterby}} col-md-12" *ngFor="let skill of (employee.skills | imageFilter:filterby)">
+          <div class="row-content" style="font-size: 20px; padding: 20px;">
+            <div title="{{employee.firstName}}">
+                <strong>{{employee.firstName}}</strong>
+            </div>
+            <div class="card-body">
+                <img src="{{employee.picture}}" class="comment-media">
+                <p class="card-text">{{employee.designation}}</p>
+                <p>{{skill.skill}}</p>
+            </div>
+            <a class="btn" routerLinkActive="active" style="background-color: #1eb5e2; color: white;" [routerLink]="['/profile-detail', employee.id]">View Profile</a>
+          </div>
+      </div>
+    </div>
+  </div>

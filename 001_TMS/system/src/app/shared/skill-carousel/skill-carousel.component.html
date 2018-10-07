@@ -1,0 +1,24 @@
+<h1>Competency</h1>
+<div class="carousel" *ngIf="list">
+  <span class="prev" [ngClass]="{'disabled': (min <= 0)}" (click)="prev(min <= 0)">
+    <i class="fa fa-chevron-left"></i>
+  </span>
+  <ul>
+    <li *ngFor="let skill of list; let i = index" [ngClass]="{'show-skill': (i >= min && i < max), 'selected': skill.selected}" (click)="selectSkill(skill)">
+      <h4 [title]="skill.skill">{{skill.skill}}</h4>
+      <div class="levels">
+        <li [ngStyle]="{'height': skill.level1Percentage+ '%'}"></li>
+        <li [ngStyle]="{'height': skill.level2Percentage+ '%'}"></li>
+        <li [ngStyle]="{'height': skill.level3Percentage+ '%'}"></li>
+      </div>
+      <div class="percent">
+        <li title="Available">Act. <span>{{skill.actualAssociates}}</span></li>
+        <li title="Required">Req. <span>{{skill.requiredAssociates}}</span></li>
+      </div>
+      <div class="percentage-view"><span [ngStyle]="{'width': skill.percentage+'%'}"></span></div>
+    </li>
+  </ul>
+  <span class="next" [ngClass]="{'disabled': (max >= list.length)}" (click)="next(max >= list.length)">
+    <i class="fa fa-chevron-right"></i>
+  </span>
+</div>
